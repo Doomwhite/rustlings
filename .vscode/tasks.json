@@ -1,0 +1,76 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Rustlings Verify",
+      "type": "shell",
+      "command": "rustlings verify",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Rustlings Watch",
+      "type": "shell",
+      "command": "rustlings watch",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Rustlings Run",
+      "type": "shell",
+      "command": "rustlings run",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Rustlings Reset",
+      "type": "shell",
+      "command": "rustlings reset ${input:param1}",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Rustlings Hint",
+      "type": "shell",
+      "command": "rustlings hint ${input:param1}",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Rustlings List",
+      "type": "shell",
+      "command": "rustlings list",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Rustlings Lsp",
+      "type": "shell",
+      "command": "rustlings lsp",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "param1",
+      "description": "Param1:",
+      "default": "",
+      "type": "promptString"
+    }
+  ]
+}
