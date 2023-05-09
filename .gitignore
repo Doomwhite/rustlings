@@ -13,3 +13,4 @@ rust-project.json
 *.o
 !.vscode
 !.vscode/tasks.json
+*ThreadId1.exe
